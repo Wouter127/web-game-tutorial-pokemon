@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="inline-block">
+        <div class="transition" id="overlapping-div"></div>
+        
+        <canvas></canvas>
+        <div id="user-interface">
+            <div class="status-bar">
+                <h1>Draggle</h1>
+                <div class="health-bars">
+                    <div class="max-health"></div>
+                    <div class="act-health" id="enemy-health-bar"></div>
+                </div>    
+            </div>
+            <div class="status-bar-me">
+                <h1>Emby</h1>
+                <div class="health-bars-me">
+                    <div class="max-health-me"></div>
+                    <div class="act-health-me" id="player-health-bar"></div>
+                </div>    
+            </div>
+
+            <div class="container">
+                <div class="dialogue" id="dialogue-box">Abcdefghjiklmnopqrstuvwxyz</div>
+                <div class="attacks" id="attacks-box">
+
+                </div>
+                <div class="type" id="attack-type">
+                    <h1>Attack type</h1>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js" integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="data/audio.js"></script>
+    <script src="data/collisions.js"></script>
+    <script src="data/battleZones.js"></script>
+    <script src="data/attacks.js"></script>
+    <script src="data/monsters.js"></script>
+    <script src="classes.js"></script>
+    <script src="index.js"></script>
+    <script src="battleScene.js"></script>
+</html>
